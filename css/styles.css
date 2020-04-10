@@ -8,9 +8,26 @@ body {
 h4 {
   color: white;
 }
+#startOrder {
+  margin: 40px;
+}
  #pizzaOrder{
+   margin-top: 20%;
+   color: white;
   display: none;
 } 
+#size {
+  background-color: black;
+}
+#cheese {
+  background-color: black;
+}
+#meat {
+  background-color: black;
+}
+#veggies {
+  background-color: black;
+}
 
 #confirmation {
   display: none;
