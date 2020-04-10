@@ -2,16 +2,24 @@
 function PizzaToBuy () {
   this.pizzas = [];
   this.currentId = 0;
-  console.log("PizzaToBuy", PizzaToBuy);
+  console.log(this.pizzas);
 }
 
-PizzaToBuy.prototype.addPizza = function(pizza) {
+PizzaToBuy.prototype.addPizza = function (pizza) {
   pizza.id = this.assignId();
   this.pizzas.push(pizza);
 }
 
-function Pizza(size) {
+function Pizza(size,cheese, meat,veggies) {
   this.size = size;
+  this.cheese = cheese;
+  this.meat = meat;
+  this.veggies = veggies;
+}
+
+PizzaToBuy.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
 }
 
 PizzaToBuy.prototype.findPizza = function (id) {
@@ -39,7 +47,24 @@ Pizza.prototype.price = function () {
   return price;
 }
 
+// function showOrder(toBuy) {
+//   var order = PizzaToBuy.findPizza(toBuy); 
+// }
+
 // User Logic Interface
 $(document).ready(function() {
   var pizzaToBuy = new PizzaToBuy();
-}
+
+  $("#pizzaOrder").submit(function(event) {
+    event.preventDefault();
+    var inputtedSize = $("#size").val();
+    var inputtedCheese = $("#cheese").val();
+    var inputtedMeat = $("#meat").val();
+    var inputtedVeggies = $("#vegitables").val();
+
+    var newPizza = new Pizza(inputtedSize,inputtedCheese,inputtedMeat,inputtedVeggies);
+    pizzaToBuy.addPizza(newPizza);
+    console.log(pizzaToBuy);
+    // showOrder(pizzaToBuy);
+  });
+})

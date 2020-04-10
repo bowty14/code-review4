@@ -14,80 +14,77 @@
   <h1 id="greeting" class="animated flash">Welcome to BowTy Pizza!</h1>
   <h4>Please select what kind of toppings and size pizza 🍕 youd like.</h4>
   <div class="container">
-    <h4>Pizza size</h4>
     <form id="pizzaOrder">
-    <label for="container">small
-      <input type="checkbox" >
-      <span class="checkmark"></span>
-    </label>
-    <label class="container" >medium
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">large
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">XL
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
+    <div class="form-group">
+      <label for="size">Pizza size</label>
+      <select id="size">
+        <option value="small">small</option>
+        <option value="medium">medium</option>
+        <option value="large">large</option>
+        <option value="XL">XL</option>
+      </select>
     <br>
     <h4>Toppings</h4>
-    <label for="container">Cheese
-      <input type="checkbox" >
-      <span class="checkmark"></span>
-    </label>
+    <div >
+      <label for="container">Cheese
+        <input id="cheese" type="checkbox" value="cheese">
+        <span class="checkmark"></span>
+      </label>
+    </div>
     <h4>Meat Toppingss</h4>
-    <label class="container">Pepperoni
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Sausage
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Bacon
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Canadian Bacon
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Ham
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
+    <div id="meat">
+      <label class="container">Pepperoni
+        <input type="checkbox" value="pepperoni">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Sausage
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Bacon
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Canadian Bacon
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Ham
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    </div>
     <h4>Vegitables Toppings</h4>
-    <label class="container">Olives
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Pineapple
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Spinach
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Mushroom
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Onions
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Tomatoes
-      <input type="checkbox">
-      <span class="checkmark"></span>
-    </label>
+    <div id="vegitables">
+      <label class="container">Olives
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Pineapple
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Spinach
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Mushroom
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Onions
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Tomatoes
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    </div>
     <br>
-    <button class="btn btn-info">Submit Order</button>
+    <button class="btn btn-info" type="submit">Submit Order</button>
     </form>
-    <h3>Your order details</h3>
+    <h3 id="confirmation">Your order details</h3>
     <div id="output"></div>
   </div>
 </body>
