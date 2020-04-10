@@ -22,7 +22,8 @@ _This program will allow a user to pick a pizza size and toppings and gives a pr
 
 * This program requires to have a web browser as Google Chrome, Safari or Mozilla Firefox
 
-_{You can clone this program to your desktop or download the zip file on this page: }_
+_You can clone this program to your desktop or download the zip file on this page: https://github.com/bowty14/code-review4.git_
+_You can view this work at: _
 
 ## Known Bugs
 
