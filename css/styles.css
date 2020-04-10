@@ -30,6 +30,8 @@ h4 {
 }
 
 #confirmation {
+  opacity: 80%;
+  margin-top: 20%;
   display: none;
   color:black;
 }
