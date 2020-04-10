@@ -1,3 +1,4 @@
+// Business logic interface
 function PizzaToBuy () {
   this.pizzas = [];
   this.currentId = 0;
@@ -38,3 +39,7 @@ Pizza.prototype.price = function () {
   return price;
 }
 
+// User Logic Interface
+$(document).ready(function() {
+  var pizzaToBuy = new PizzaToBuy();
+}
