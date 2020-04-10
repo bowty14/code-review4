@@ -25,7 +25,7 @@ PizzaToBuy.prototype.assignId = function() {
 PizzaToBuy.prototype.findPizza = function (id) {
   for (var i = 0; i < this.pizzas.length; i++) {
     if (this.pizzas[i]) {
-      if (this.pizzas[i].id === id) {
+      if (this.pizzas[i].id == id) {
         return this.pizzas[i];
       }
     }
@@ -47,9 +47,22 @@ Pizza.prototype.price = function () {
   return price;
 }
 
-// function showOrder(toBuy) {
-//   var order = PizzaToBuy.findPizza(toBuy); 
-// }
+function showOrder(toBuy) {
+  content = '';
+  for (var i = 0; i < toBuy.pizzas[i].length; i++) {
+    content += showPizza(toBuy.pizzas[i]);
+    
+  }
+  $("#output").html(content);
+  $("#confirmation").show();
+}
+
+function showPizza(pizza) {
+  var orderInfo = ("One " + pizza.size + " pizza " + "with" + pizza.cheese + " , " + pizza.meat + " and " + pizza.veggies + "your total is" + pizza.price);
+  console.log(showPizza);
+  return orderInfo;
+  
+}
 
 // User Logic Interface
 $(document).ready(function() {
@@ -65,6 +78,6 @@ $(document).ready(function() {
     var newPizza = new Pizza(inputtedSize,inputtedCheese,inputtedMeat,inputtedVeggies);
     pizzaToBuy.addPizza(newPizza);
     console.log(pizzaToBuy);
-    // showOrder(pizzaToBuy);
+    showOrder(pizzaToBuy);
   });
 })
