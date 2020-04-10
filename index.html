@@ -13,7 +13,9 @@
 <body>
   <h1 id="greeting" class="animated flash">Welcome to BowTy Pizza!</h1>
   <h4>Please select what kind of toppings and size pizza 🍕 youd like.</h4>
+  
   <div class="container">
+    <button id="startOrder" type="button">Start order</button>
     <form id="pizzaOrder">
     <div class="form-group">
       <label for="size">Pizza size</label>
@@ -49,8 +51,10 @@
     <br>
     <button class="btn btn-info" type="submit">Submit Order</button>
     </form>
-    <h3 id="confirmation">Your order details</h3>
+    <div id="confirmation" class="jumbotron">
+    <h3>Your order details</h3>
     <div id="output"></div>
+  </div>
   </div>
 </body>
 </html>

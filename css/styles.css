@@ -8,11 +8,16 @@ body {
 h4 {
   color: white;
 }
-.container{
-  margin: ;
-}
+/* #pizzaOrder{
+  display: none;
+} */ 
+
 #confirmation {
   display: none;
+  color:black;
+}
+#output{
+  color: black;
 }
 
 
