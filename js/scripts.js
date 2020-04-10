@@ -70,6 +70,7 @@ $(document).ready(function() {
     var inputtedCheese = $("#cheese").val();
     var inputtedMeat = $("#meat").val();
     var inputtedVeggies = $("#veggies").val();
+    $("#pizzaOrder").hide();
 
    
 
