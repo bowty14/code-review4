@@ -9,3 +9,9 @@ PizzaToBuy.prototype.addPizza = function(pizza) {
   this.pizzas.push(pizza);
 }
 
+function Pizza(small, medium,large,XL) {
+  this.small = small;
+  this.medium = medium;
+  this.large = large;
+  this.XL = XL;
+}
