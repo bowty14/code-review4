@@ -1,8 +1,9 @@
 body {
-  background-image: url(https://www.vouchercodesuae.com/blog/wp-content/uploads/pizza.jpg);
+  background-image: url(https://www.bbspizzeria.com/media/site_assets/f6b966671815f8ebecbcf88999ae3357/assets/153784617.jpg);
   text-align: center;
 }
 #banner {
+  background-color: lightslategrey;
   color:black;
 }
 h4 {

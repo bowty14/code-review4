@@ -49,7 +49,7 @@ function showOrder(toBuy) {
 }
 
 function showPizza(pizza) {
-  var orderInfo = ("One " + pizza.size + " pizza " + "with " + pizza.cheese + " , " + pizza.meat + " and " + pizza.veggies + " your total is " + pizza.price() + "</br>" + "</br>");
+  var orderInfo = ("One " + pizza.size + " pizza " + "with " + pizza.cheese + " , " + pizza.meat + " and " + pizza.veggies + " your total is " + pizza.price() + "</br>" + "</br>" + "Please allow 25 minutes from the time you placed the order.");
   console.log(showPizza);
   return orderInfo;
   
@@ -71,6 +71,7 @@ $(document).ready(function() {
     var inputtedMeat = $("#meat").val();
     var inputtedVeggies = $("#veggies").val();
     $("#pizzaOrder").hide();
+    $("#hello").hide();
 
    
 
