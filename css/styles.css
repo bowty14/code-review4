@@ -1,3 +1,19 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/2b/af/e7/2bafe7a4421356aef1ef5a650ecc467f.jpg);
+  text-align: center;
+}
+#greeting {
+  color: white;
+}
+h4 {
+  color: white;
+}
+.container{
+  margin: ;
+}
 #confirmation {
   display: none;
 }
+
+
+

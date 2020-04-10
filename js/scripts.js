@@ -49,7 +49,7 @@ Pizza.prototype.price = function () {
 
 function showOrder(toBuy) {
   content = '';
-  for (var i = 0; i < toBuy.pizzas[i].length; i++) {
+  for (var i = 0; i < toBuy.pizzas.length; i++) {
     content += showPizza(toBuy.pizzas[i]);
     
   }
@@ -58,7 +58,7 @@ function showOrder(toBuy) {
 }
 
 function showPizza(pizza) {
-  var orderInfo = ("One " + pizza.size + " pizza " + "with" + pizza.cheese + " , " + pizza.meat + " and " + pizza.veggies + "your total is" + pizza.price);
+  var orderInfo = ("One " + pizza.size + " pizza " + "with " + pizza.cheese + " , " + pizza.meat + " and " + pizza.veggies + " your total is " + pizza.price() + "</br>" + "</br>");
   console.log(showPizza);
   return orderInfo;
   
@@ -73,7 +73,7 @@ $(document).ready(function() {
     var inputtedSize = $("#size").val();
     var inputtedCheese = $("#cheese").val();
     var inputtedMeat = $("#meat").val();
-    var inputtedVeggies = $("#vegitables").val();
+    var inputtedVeggies = $("#veggies").val();
 
     var newPizza = new Pizza(inputtedSize,inputtedCheese,inputtedMeat,inputtedVeggies);
     pizzaToBuy.addPizza(newPizza);
