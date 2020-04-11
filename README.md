@@ -1,4 +1,4 @@
-# _Movie Tickets_
+# _Pizza Parlor_
 
 #### _Website that tells you the price of a pizza based off the size, 04/10/2020_
 
